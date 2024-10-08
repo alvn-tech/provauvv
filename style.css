@@ -1,0 +1,141 @@
+/* Reseta os padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f7f4;
+    color: #5e3a3a;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #944f60;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+#banner {
+    background-color: #f4efe7;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #d5d2cd;
+}
+
+#banner h1 {
+    font-size: 36px;
+    color: #d5d2cd;
+}
+
+/* Founder Section */
+#founder {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.founder-info {
+    flex: 2;
+    padding-right: 40px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#founder h2 {
+    font-size: 28px;
+    color: #944f60;
+    margin-bottom: 20px;
+}
+
+#founder p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify; /* Garante alinhamento justificado */
+}
+
+/* Action Boxes */
+.action-boxes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Alinha 2 caixas por linha */
+    gap: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.action-boxes .box {
+    background-color: #f4efe7;
+    border: 2px solid #d5d2cd; /* Borda ao redor da caixa */
+    padding: 0; /* Remove padding para ajustar o layout das imagens e títulos */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.action-boxes .box:hover {
+    transform: translateY(-10px);
+}
+
+.action-boxes .box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #d5d2cd; /* Borda fina abaixo da imagem */
+    margin-bottom: 0; /* Remove margem entre imagem e título */
+}
+
+/* Estilos para o título abaixo das imagens */
+.action-boxes .box .box-title {
+    background-color: #944f60; /* Cor de fundo roxa conforme o design */
+    color: white;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: none; /* Remove borda superior */
+}
+
+/* Footer */
+footer {
+    background-color: #944f60; /* Cor ajustada de acordo com a UX */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduz a altura do footer */
+    margin-top: 40px; /* Distância do conteúdo acima */
+    border-top: 4px solid #d5d2cd; /* Borda superior mais grossa */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Alinhamento do texto no fundador */
+.founder-info p {
+    max-width: 500px; /* Restringe a largura do texto */
+}
